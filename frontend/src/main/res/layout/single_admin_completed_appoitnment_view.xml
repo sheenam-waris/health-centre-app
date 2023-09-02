@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/expandable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:textAlignment="textStart"
+        android:background="@drawable/custom_card_shape_view"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointment ID : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"/>
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_appointment_id"
+                android:text="1"
+                android:textSize="20sp"
+                android:textColor="@color/blue"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/open_appointment_image"
+                android:src="@drawable/arrow_forward"
+                android:layout_gravity="end"
+                android:clickable="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reporting Time : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_reporting_date2"
+                android:text="20/04/2023"
+                android:textSize="20sp"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/remove_appt_btn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:layout_gravity="start"
+                android:focusable="false"
+                android:longClickable="false"
+                android:text="Remove"
+                android:textSize="16sp"
+                app:cornerRadius="15dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/view_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/mdtp_red"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:focusable="false"
+                android:longClickable="false"
+                app:icon="@android:drawable/ic_menu_my_calendar"
+                app:iconGravity="textStart"
+                android:text="Profile"
+                android:textSize="16sp"
+                app:cornerRadius="15dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

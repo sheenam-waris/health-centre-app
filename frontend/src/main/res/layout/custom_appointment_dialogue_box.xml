@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_blue"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/top_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment ID No : "
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/blue"/>
+        <TextView
+            android:id="@+id/appointment_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/blue"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/curve_white_rectangle"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/top_linear_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule Time : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_schedule_date"
+            android:text="19/04/2023"
+            android:textSize="20sp"
+            android:textColor="@color/blue"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reporting Time : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_reporting_date2"
+                android:text="20/04/2023"
+                android:textSize="20sp"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treatment Name : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_treatment_name"
+                android:text="Stress and Tension"
+                android:textSize="20sp"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_reason"
+                android:text="Headache"
+                android:textSize="20sp"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visited"
+                android:textSize="20sp"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/prescription_download_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="11sp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:icon="@drawable/baseline_download_24"
+                app:iconGravity="textStart"
+                android:backgroundTint="#718AD1"
+                android:text="Prescription"
+                app:cornerRadius="20dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/medical_certificate_request_button"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="11sp"
+                android:backgroundTint="@color/mdtp_red"
+                android:text="Request Med Certificate"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

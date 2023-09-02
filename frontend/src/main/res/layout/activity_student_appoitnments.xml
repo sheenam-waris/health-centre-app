@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.StudentAppointmentActivity">
+
+    <TextView
+        android:id="@+id/my_appointment_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/my_appointments"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="@drawable/down_curve_rect_lb"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_appointment_title"
+        app:tabMode="fixed"/>
+
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tab_layout"
+            android:id="@+id/fragment_container_view"
+            tools:layout="@layout/fragment_appointment_view"
+            />
+
+</RelativeLayout>
+
+    <!--<com.google.android.material.tabs.TabLayout
+           android:id="@+id/tab_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/my_appointment_title"
+           app:tabMode="fixed">
+
+       &lt;!&ndash;<com.google.android.material.tabs.TabItem
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Upcoming"
+           />&ndash;&gt;
+
+       </com.google.android.material.tabs.TabLayout>
+
+       <RelativeLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_appointment_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_tab_rect"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/tabview1"
+                android:layout_weight="1"
+                android:text="Upcoming"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_tab_rect_blue"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/tabview2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Complete"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/tabview3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Request"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+-->
+
+
+

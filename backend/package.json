@@ -1,0 +1,26 @@
+{
+  "name": "nitc-health-center-backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Sheenam Waris",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.12.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.9.1",
+    "md5": "^2.3.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "prisma": "^4.12.0"
+  }
+}

@@ -1,0 +1,74 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  user_id Int @id @default(autoincrement())
+  name String @db.VarChar(255)
+  email String @db.VarChar(255) @unique
+  passwordHash String @db.VarChar(256)
+  gender String @db.VarChar(50)
+  dob String @db.VarChar(50)
+  phone String @db.VarChar(50)
+  role Int @db.Int  
+}
+
+model patient {
+  patient_id Int @id
+  rollno String @db.VarChar(50) @unique
+  address String @db.VarChar(250)
+  hostel_details String @db.VarChar(100)
+  appointments appointment[]
+  medical_certs medical_certificate[]
+}
+
+
+
+model appointment {
+  app_id Int @id @default(autoincrement())
+  patient patient @relation(fields: [patient_id],references: [patient_id])
+  patient_id Int
+  reason String @db.VarChar(1024)
+  schedule_time String @db.VarChar(50)
+  status STATUS? @default(PENDING)
+  visited Boolean @default(false)
+  reporting_time String? @db.VarChar(50)
+  treatment_name String? @db.VarChar(100)
+  prescription_details String? @db.Text
+  advice String? @db.Text
+}
+
+model medical_certificate {
+  mc_id Int @id @default(autoincrement())
+  patient patient @relation(fields: [patient_id],references: [patient_id])
+  patient_id Int
+  app_id Int @unique
+  purpose String @db.Text
+  duration String @db.VarChar(50)
+  requested_at String @db.VarChar(50)
+  status STATUS @default(PENDING) //-1 for pending, 1 for approved and 0 for rejected
+  approved_at String? @db.VarChar(50)
+  approved_by String? @db.VarChar(50)
+}
+
+model sessions {
+  email String @db.VarChar(100) @unique
+  token String @id @db.VarChar(256) @unique
+  generated_at DateTime @db.Date
+}
+
+enum STATUS {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".staff.StaffAppointmentsActivity">
+
+    <TextView
+        android:id="@+id/staff_appointment_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Appointments"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:background="@drawable/down_curve_rect_lb"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staff_appointment_title"
+        app:tabMode="fixed"/>
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout_staff"
+        android:id="@+id/fragment_staff_container_view"
+        tools:layout="@layout/fragment_staff_appointment_view"
+        />
+
+</RelativeLayout>

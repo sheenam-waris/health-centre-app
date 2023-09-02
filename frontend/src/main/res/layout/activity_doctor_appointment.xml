@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.DoctorAppointmentActivity">
+
+
+    <TextView
+        android:id="@+id/doctor_appointment_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Appointments"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:background="@drawable/down_curve_rect_lb"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_appointment_view_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/doctor_appointment_title" />
+
+</RelativeLayout>

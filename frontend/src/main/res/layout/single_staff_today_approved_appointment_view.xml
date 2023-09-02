@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:textAlignment="textStart"
+        android:background="@drawable/custom_card_shape_view"
+        android:clickable="true"
+        android:focusable="true">
+
+
+            <TextView
+                android:id="@+id/tv_reporting_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingStart="10dp"
+                android:text="Reporting Date: 09/04/2023"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_scheduling_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:textSize="18sp"
+            android:text="Scheduling Date: 09/04/2023"
+            android:textColor="@color/blue" />
+
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:text="Reason: Doctor's appointment"
+            android:textColor="@color/blue"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/upload_prescription_btn"
+                android:layout_width="155dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/light_blue"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:focusable="false"
+                android:longClickable="false"
+                android:text="Prescription"
+                android:textSize="15sp"
+                app:cornerRadius="15dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/view_profile_btn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/blue"
+                android:focusable="false"
+                android:layout_alignParentStart="true"
+                android:longClickable="false"
+                app:icon="@android:drawable/ic_menu_my_calendar"
+                android:textAlignment="viewStart"
+                android:text="Profile"
+                android:textSize="12sp"
+                app:cornerRadius="15dp"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

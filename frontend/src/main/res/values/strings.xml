@@ -1,0 +1,27 @@
+<resources>
+    <string name="android_client_id">851406807153-1aitn9ah989bsk7alqcd74vo5k3v5d0b.apps.googleusercontent.com</string>
+    <string name="web_client_id">851406807153-ajg3jk04hv59r8m7dj3umr0u4tdfsa1t.apps.googleusercontent.com</string>
+    <string name="app_name">Health Centre</string>
+    <string name="health">NITC HEALTH CENTRE</string>
+    <string name="request_medical_certificate">Request Medical Certificate</string>
+    <string name="request_appointment">Request Appointment</string>
+    <string name="my_appointments">My Appointments</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="userdetails">My Profile</string>
+    <string name="username">Username</string>
+    <string name="all_unvisited_appointments">Today Scheduled Appointments</string>
+    <string name="new_requested_appointments">New Requested Appointments</string>
+    <string name="create_new_appointment">Create New Appointment</string>
+    <string name="register_using_nitc_email">STUDENT LOGIN USING NITC EMAIL</string>
+    <string name="register">REGISTER</string>
+    <string name="welcome_dashboard">Welcome,</string>
+    <string name="view_profile_content">View Profile</string>
+    <string name="logout_content">Logout</string>
+    <string name="always_stay_healthy_message">Always Stay Healthy!</string>
+    <string name="update">Update</string>
+    <string name="appointments">Appointments</string>
+    <string name="the_first_wealth_is_health">The first wealth is Health!</string>
+    <string name="create_appointment">Create Appointment</string>
+</resources>

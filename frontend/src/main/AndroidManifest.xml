@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_dark"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthCentre.Fullscreen"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".doctor.ViewMedicalCertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.UploadMedicalCertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.PrescriptionViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminEditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminAddNewUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminViewAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminViewStaffsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminViewDoctorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.ViewPatientProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.UploadPrescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.DoctorAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.DoctorDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.DoctorMedicalCertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.StaffAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.RequestMedicalCertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.StaffCreateNewAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.StaffDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.RequestNewAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HealthCentre.Fullscreen" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+    </application>
+
+</manifest>

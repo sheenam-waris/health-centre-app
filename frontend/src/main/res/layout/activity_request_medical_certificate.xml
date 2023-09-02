@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".student.RequestMedicalCertificateActivity">
+
+
+    <TextView
+        android:id="@+id/med_cert_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/request_medical_certificate"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:background="@drawable/down_curve_rect_lb"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/purpose"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/curve_lb_rectangle"
+        android:drawableStart="@drawable/write_reason"
+        android:drawablePadding="10dp"
+        android:hint="Purpose of request"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/med_cert_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textview_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingTop="15dp"
+        android:text="Duration :"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="@+id/purpose"
+        app:layout_constraintTop_toBottomOf="@+id/purpose" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/date_from"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/light_blue"
+        android:text="From "
+        app:icon="@android:drawable/ic_menu_my_calendar"
+        android:textAlignment="viewStart"
+        app:cornerRadius="15dp"
+        android:longClickable="false"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/date_to"
+        app:layout_constraintTop_toBottomOf="@+id/textview_duration"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/date_to"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/light_blue"
+        android:text="to"
+        app:icon="@android:drawable/ic_menu_my_calendar"
+        android:textAlignment="viewStart"
+        app:cornerRadius="15dp"
+        android:longClickable="false"
+        android:focusable="false"
+        app:layout_constraintStart_toEndOf="@+id/date_from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_duration"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_med_req_btn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="268dp"
+        android:backgroundTint="@color/blue"
+        android:focusable="false"
+        android:longClickable="false"
+        android:text="SUBMIT"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/med_cert_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

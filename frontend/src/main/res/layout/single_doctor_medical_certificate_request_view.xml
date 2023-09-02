@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:textAlignment="textStart"
+        android:background="@drawable/custom_card_shape_view"
+        android:clickable="true"
+        android:focusable="true">
+
+            <TextView
+                android:id="@+id/tv_request_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingStart="10dp"
+                android:text="Request Date: 09/04/2023"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:textSize="18sp"
+            android:text="Purpose : MakeUp Exam "
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:text="Duration : dd/mm/yy to dd/mm/yy"
+            android:textColor="@color/blue"
+            />
+
+        <TextView
+            android:id="@+id/tv_appointment_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:text="Appointment Id : 1"
+            android:textColor="@color/blue"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reject_btn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:layout_gravity="start"
+                android:focusable="false"
+                android:longClickable="false"
+                android:text="Reject"
+                android:textSize="15sp"
+                app:cornerRadius="15dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/view_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/mdtp_red"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:focusable="false"
+                android:longClickable="false"
+                app:icon="@android:drawable/ic_menu_my_calendar"
+                android:text="Profile"
+                android:textSize="15sp"
+                app:cornerRadius="15dp"/>
+    </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/issue_medical_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/blue"
+            android:focusable="false"
+            android:longClickable="false"
+            app:icon="@drawable/baseline_upload_file_24"
+            android:text="Issue Medical Certificate"
+            android:textSize="15sp"
+            app:cornerRadius="15dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

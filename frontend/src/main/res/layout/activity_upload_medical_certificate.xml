@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.UploadMedicalCertificateActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/down_curve_rect_lb"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="Upload Medical Certificate"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_upload_view_layout"
+        android:layout_width="315dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/curve_lb_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/upload_file_image_view_mc"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:contentDescription="Edit Profile"
+            android:focusable="true"
+            android:src="@drawable/baseline_upload_file_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upload_med_cert_btn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/blue"
+            android:focusable="false"
+            android:longClickable="false"
+            android:onClick="submitbuttonHandler"
+            android:text="Upload"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/remove_upload_file_button_mc"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginBottom="16dp"
+            android:allowClickWhenDisabled="false"
+            android:backgroundTint="#EC0858"
+            android:focusable="false"
+            android:longClickable="false"
+            android:onClick="submitbuttonHandler"
+            android:text="Remove"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+        <TextView
+            android:id="@+id/textView_upload_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upload_file_image_view_mc"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="50dp"
+            android:text="Please select a file"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
