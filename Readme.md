@@ -7,6 +7,7 @@ To address these challenges, we developed this application using the following t
 * Frontend: Android Studio with Java programming language
 * Backend: Node.js
 * Database: MySQL
+
 The main goal of this project was to automate the entire health center workflow, making it more efficient and user-friendly. This application serves doctors, staff, and students at college by providing a seamless platform for managing health records, prescriptions, and administrative tasks.
 
 # Installation
@@ -19,7 +20,7 @@ git clone https://github.com/yourusername/health-centre-application.git
 4. Build and run the Android application using Android Studio.
 
 # Contributing
-We welcome contributions to improve the Health Centre Application. If you would like to contribute, please follow these steps:
+Welcome to improve the Health Centre Application. If you would like to contribute, please follow these steps:
 
 * Fork the repository.
 * Create a new branch for your feature or bug fix.
