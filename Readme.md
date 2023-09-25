@@ -14,7 +14,7 @@ The main goal of this project was to automate the entire health center workflow,
 To use the Health Centre Application, follow these steps:
 
 1. Clone the repository to your local machine.
-git clone https://github.com/sheenam-waris/health-centre-application.git
+gh repo clone sheenam-waris/health-centre-app
 2. Install Android Studio and Node.js if not already installed on your system.
 3. Set up the database using MySQL and configure the connection in the Node.js backend.
 4. Build and run the Android application using Android Studio.
